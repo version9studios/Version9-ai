@@ -1,0 +1,129 @@
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>VERSION9 AI</title>
+
+  <style>
+
+    body {
+
+      margin: 0;
+
+      padding: 25px;
+
+      background: #100d24;
+
+      color: white;
+
+      font-family: Arial, sans-serif;
+
+      text-align: center;
+
+    }
+
+    h1 { color: #a78bfa; font-size: 38px; }
+
+    p { color: #d1c9ee; }
+
+    textarea {
+
+      width: 90%;
+
+      height: 110px;
+
+      padding: 12px;
+
+      border-radius: 12px;
+
+      font-size: 16px;
+
+    }
+
+    button {
+
+      margin: 15px;
+
+      padding: 15px 25px;
+
+      border: 0;
+
+      border-radius: 12px;
+
+      background: #8b5cf6;
+
+      color: white;
+
+      font-size: 17px;
+
+    }
+
+    #result {
+
+      margin-top: 20px;
+
+      padding: 15px;
+
+      background: #211a40;
+
+      border-radius: 12px;
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <h1>VERSION9 AI</h1>
+
+  <p>Funny 3D AI Video Studio</p>
+
+  <h2>Create a funny video idea</h2>
+
+  <textarea id="prompt" placeholder="Describe your funny video..."></textarea>
+
+  <br>
+
+  <button onclick="generateIdea()">Generate Idea</button>
+
+  <div id="result">Your video idea will appear here.</div>
+
+  <script>
+
+    function generateIdea() {
+
+      const prompt = document.getElementById("prompt").value.trim();
+
+      const result = document.getElementById("result");
+
+      if (!prompt) {
+
+        result.textContent = "Please describe your funny video first!";
+
+        return;
+
+      }
+
+      result.textContent =
+
+        "Your VERSION9 AI video idea: " + prompt +
+
+        ". Style: Funny 3D cartoon animation.";
+
+    }
+
+  </script>
+
+</body>
+
+</html>o
